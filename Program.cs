@@ -9,7 +9,7 @@ namespace Smaller_Elements_Array
             Console.WriteLine($"Given an array of integers, return a new array where each element in the new array\n" +
                 $"is the number of smaller elements to the right of that element in the original array.\n\n");
             DoCalc MyMath = new DoCalc { };                     
-            int[] arr = { 3, 4, 9, 6, 1, 0, 6, 5, 3, 2, 6 };    // TEST CASE
+            int[] arr = { 3, 4, 9, 6, 1, 0, 6, 5, 3, 2, 6 };    // TEST CASE 
 
             Console.WriteLine($"Starting array: {MyMath.PrintNewArray(arr)}");
             Console.WriteLine($"Number of smaller elements: {MyMath.PrintNewArray(MyMath.CountElements(arr))}");
@@ -34,7 +34,7 @@ namespace Smaller_Elements_Array
             return newArray;
         }
 
-        public string PrintNewArray(int[] array) // Find a better way to print arrays..... :(
+        public string PrintNewArray(int[] array) // Find a better way to print arrays.....     :(
         {
             string newArr = "";
             foreach(int num in array)
